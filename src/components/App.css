@@ -1,0 +1,82 @@
+.App {
+  display: grid;
+  grid-template-rows: min-content auto;
+  height: 100vh;
+  overflow: scroll;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(108, 152, 255) 100%
+  );
+  text-align: center;
+  margin: 0;
+  transition: opacity 5s;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  grid-column: 1 / span 2;
+  padding: 10px 5px;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  width: 300px;
+}
+button{
+  width: 100px;
+}
+
+nav{
+  height: 100%;
+  padding: 10px;
+  max-width: 150px;
+}
+article {
+  display: flex;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #dee9ff;
+}
+
+nav p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+article .date {
+  font-style: italic;
+}
+
+article .body {
+  white-space: break-spaces;
+}
+
+.error {
+  background-color: red;
+  color: gold;
+  padding: 5px;
+}
+
+img{
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
